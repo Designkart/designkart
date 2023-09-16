@@ -53,159 +53,110 @@
 
 
 
+/*--------------------------------------------------------------------------------------------------- */
 
 
-  /*Delete below this line*/
+/* Updated CSS code for Pricing Cards with price color changes */
 
+.card {
+  border: 1px solid #ccc; /* Add a 1px solid gray border */
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+  overflow: hidden; /* Add overflow property to hide content overflow during animation */
+  box-sizing: border-box; /* Include padding and border in the card's total width */
+  padding: 15px; /* Add padding to the cards */
+  transform-origin: center bottom; /* Set the transform origin to the center bottom */
+  color: black; /* Black text color in the normal state */
+  /*border-radius: 0; /* Remove card corner radius */
 
-.ag-format-container {
-  width: 1142px;
-  margin: 0 auto;
+}
+
+.card:hover {
+  transform: scale(1.05) translateY(0); /* Scale and translate the card to prevent cut-off */
+  background-color: red; /* Red background color on hover */
+  color: white; /* White text color on hover */
+  border-color: red; /* Red border color on hover */
+}
+
+.card-title {
+  color: Black /* Add a color transition for smooth change */
+}
+
+.card-subtitle {
+  color: Black /* Add a color transition for smooth change */
+}
+
+.card-price {
+  color: red; /* Light gray price color in the normal state */
+}
+
+.btn-primary {
+  background-color: red; /* White button background color */
+  color: white; /* Black button text color */
+  border-color: white; /* White button border color */
+}
+
+.btn-primary:hover {
+  background-color: white; /* Black background color on button hover */
+  color: black; /* White text color on button hover */
+  border-color: white; /* Black button border color on hover */
+}
+
+/* Change title, subtitle, and price color in hover state */
+.card:hover .card-title,
+.card:hover .card-subtitle {
+  color: white; /* White text color on hover */
+}
+
+.card:hover .card-price {
+  color: black; /* Lighter gray price color on hover */
 }
 
 
-body {
-  background-color: #ffffff;
-}
-.ag-courses_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 
-  padding: 50px 0;
-}
-.ag-courses_item {
-  -ms-flex-preferred-size: calc(33.33333% - 30px);
-  flex-basis: calc(33.33333% - 30px);
 
-  margin: 0 15px 30px;
+/* CSS for the ribbon with blinking effect */
 
-  overflow: hidden;
+.ribbon-2 {
+  --f: 10px; /* control the folded part */
+  --r: 10px; /* control the ribbon shape */
+  --t: 10px; /* the top offset */
 
-  border-radius: 12px;
-}
-.ag-courses-item_link {
-  display: block;
-  padding: 30px 20px;
-  background-color: #121212;
-
-  overflow: hidden;
-
-  position: relative;
-}
-.ag-courses-item_link:hover,
-.ag-courses-item_link:hover .ag-courses-item_date {
-  text-decoration: none;
-  color: #FFF;
-}
-.ag-courses-item_link:hover .ag-courses-item_bg {
-  -webkit-transform: scale(10);
-  -ms-transform: scale(10);
-  transform: scale(10);
-}
-.ag-courses-item_title {
-  min-height: 87px;
-  margin: 0 0 25px;
-
-  overflow: hidden;
-
-  font-weight: bold;
-  font-size: 30px;
-  color: #FFF;
-
-  z-index: 2;
-  position: relative;
-}
-.ag-courses-item_date-box {
-  font-size: 18px;
-  color: #FFF;
-
-  z-index: 2;
-  position: relative;
-}
-.ag-courses-item_date {
-  font-weight: bold;
-  color: #f9b234;
-
-  -webkit-transition: color .5s ease;
-  -o-transition: color .5s ease;
-  transition: color .5s ease
-}
-.ag-courses-item_bg {
-  height: 128px;
-  width: 128px;
-  background-color: #f9b234;
-
-  z-index: 1;
   position: absolute;
-  top: -75px;
-  right: -75px;
-
-  border-radius: 50%;
-
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-}
-.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #3ecd5e;
-}
-.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-  background-color: #e44002;
-}
-.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-  background-color: #952aff;
-}
-.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-  background-color: #cd3e94;
-}
-.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-  background-color: #4c49ea;
+  inset: var(--t) calc(-1 * var(--f)) auto auto;
+  padding: 0 20px var(--f) calc(20px + var(--r)); /* Increased padding for right side */
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - var(--f)),
+    calc(100% - var(--f)) 100%,
+    calc(100% - var(--f)) calc(100% - var(--f)),
+    0 calc(100% - var(--f)),
+    var(--r) calc(50% - var(--f) / 2)
+  );
+  background: red;
+  box-shadow: 0 calc(-1 * var(--f)) 0 inset #0005;
+  animation: blink 1s infinite; /* Apply the blinking animation */
+  transition: background-color 0.3s; /* Add a smooth transition for background color */
+  color: white; /* Set initial text color to white */
 }
 
+/* Add hover effect for the card */
+.card:hover .ribbon-2 {
+  background-color: white; /* Change the background color of the ribbon when the card is hovered */
+  color: red; /* Change text color to red on hover */
+}
 
+/* Add padding between ribbon label and right-side boundary */
+.ribbon-2 .ribbon-label {
+  padding-right: 10px; /* Adjust the right padding as needed */
+}
 
-@media only screen and (max-width: 979px) {
-  .ag-courses_item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-    flex-basis: calc(50% - 30px);
+@keyframes blink {
+  0%, 100% {
+    opacity: 0; /* Ribbon is invisible at the start and end of the animation */
   }
-  .ag-courses-item_title {
-    font-size: 24px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .ag-format-container {
-    width: 96%;
-  }
-
-}
-@media only screen and (max-width: 639px) {
-  .ag-courses_item {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-  .ag-courses-item_title {
-    min-height: 72px;
-    line-height: 1;
-
-    font-size: 24px;
-  }
-  .ag-courses-item_link {
-    padding: 22px 40px;
-  }
-  .ag-courses-item_date-box {
-    font-size: 16px;
+  50% {
+    opacity: 1; /* Ribbon is visible at the midpoint of the animation */
   }
 }
-
-
-
-
-
