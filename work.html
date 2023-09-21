@@ -21,6 +21,12 @@
     <!-- Favicon -->
 <link rel="icon" href="img/favicon.png" type="image/png">
 
+<style>
+    header {
+        margin-bottom: -100px; /* Adjust this value as needed */
+    }
+</style>
+
  </head>
 
 <body>
@@ -74,6 +80,11 @@
                 <div class="col-md-6">
                     <div class="headline mt-0 mb-0">
                         <div class="headline-content">
+
+<h1 class="headline-title display-3">
+    <span class="wrap-animation">
+    </span>
+</h1>
                             <h1 class="headline-title display-3">A digital agency for 
                                     brands.</h1>
                             <p class="headline-subtitle">We collaborate with ambitious people.Let’s build something great.</p>
@@ -87,43 +98,202 @@
             </div>
         </div>
     </header>
+
+  <!-- portfolio....Add h2 for double height & w2 for double width -->
+
     <section class="space-md">
-        <div class="container">
-            <figure> <img src="img/photo-1516638022313-53fa45a84c7f.jpg" alt="" class="img-fluid"> </figure>
-            <div class="row d-flex justify-content-start space-md">
-                <div class="col-md-2">
-                    <ul class="list-unstyled project-intro">
-                        <li class="title">What We Did</li>
-                        <li>Branding</li>
-                        <li>Website Design</li>
-                        <li>Website Development</li>
-                        <li>illustration</li>
-                    </ul>
+        <div id="portfolio" class="container">
+            <div id="portfolio-filters ">
+                <ul id="filters" class="p-0">
+                    <li><a href="*" class="active">All</a></li>
+                    <li><a href=".graphics">Graphics</a></li>
+                    <li><a href=".uiux">UI/UX</a></li>
+                    <li><a href=".art">Art</a></li>
+                </ul>
+            </div><hr><br>
+
+
+            <div class="grid" data-cols="3" data-margin="30" data-height="1" data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
+
+
+                <!-- entry -->
+                <div class="entry work-entry art">
+                    <a href="project 1.html">
+                           <div class="entry-image imageBG" data-img="img/thumbnail/p1.jpg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Indian Navy New Flag/Ensign Design</div>
+                                <div class="work-entry-cat">Ensign Design</div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-7 offset-md-1">
-                    <p class="h4"> In an industry where so many brands look and sound quite similar, offering something bold and distinctive ensures; internal audiences have a proud symbol to rally behind, empowering staff to be confident and singular</p>
+                <!-- end:entry -->
+
+
+                <div class="entry work-entry graphics">
+                    <a href="project 2.html">
+                        <div class="entry-image imageBG" data-img="img/thumbnail/p2.jpg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Logo Design for India-Israel 30th Diplomatic Anniversary
+</div>
+                                <div class="work-entry-cat">Logo Design</div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+                <!-- end:entry -->
+
+
+                <div class="entry work-entry graphics">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/photo-1558118720-fa5cdebe6b3a.jpg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Portfolio page</div>
+                                <div class="work-entry-cat">web design</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+
+
+                <div class="entry work-entry uiux">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/photo-1558100984-01e6cd6fc9aa.jpg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Sunday Breakfast</div>
+                                <div class="work-entry-cat">Branding</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+
+
+                <div class="entry work-entry graphics h2">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/photo-1558082513-13668c3b7425.jpg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Sunday Breakfast</div>
+                                <div class="work-entry-cat">All</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+
+
+                <div class="entry work-entry graphics uiux">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/photo-1557941760-987c3f403d5a.jpg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Pine Street</div>
+                                <div class="work-entry-cat">Web + Digital</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+
+
+                <div class="entry work-entry graphics">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/photo-1534073828943-f801091bb18c.jpg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Mobipaid</div>
+                                <div class="work-entry-cat">Branding</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+
+
+                <div class="entry work-entry graphics">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/photo-1484755560615-a4c64e778a6c.jpg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Solo Solution</div>
+                                <div class="work-entry-cat">Logo</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+
+
+                <div class="entry work-entry graphics art">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/photo-1494253109108-2e30c049369b.jpg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Panic web</div>
+                                <div class="work-entry-cat">Branding Campaign</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+
+
+                <div class="entry work-entry graphics art">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/photo-1436262513933-a0b06755c784.jpg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Solocademy</div>
+                                <div class="work-entry-cat">Web design + Branding</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+
+
+                <div class="entry work-entry graphics art h2">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/photo-1494475673543-6a6a27143fc8.jpg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Soulart</div>
+                                <div class="work-entry-cat">Marketing</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+
+
+                <div class="entry work-entry graphics art ui/ux w2">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/photo-1501534664411-d04203736d05.jpg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">DuleSavic</div>
+                                <div class="work-entry-cat">Fudbaler</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
             </div>
-            
-            <div class="row">
-                <div class="col-md-12">
-                    <figure> <img src="img/photo-1500281781950-6cd80847ebcd.jpg" alt="" class="img-fluid"> </figure>
-                </div>
-            </div>
-            <div class="row space-md">
-                <div class="col-md-8">
-                    <h3>Gets pretty deep but they also know how to have a good time, so we imagined a refreshing and fun visual representation of their decentralized world.</h3> </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <figure> <img src="img/photo-1484755560615-a4c64e778a6c.jpg" alt="" class="img-fluid"> </figure>
-                </div>
-                <div class="col-md-6">
-                    <figure> <img src="img/photo-1558180702-95f1c3ae2ca3.jpg" alt="" class="img-fluid"> </figure>
-                </div>
-            </div>
+
         </div>
+        <!-- /end:portfolio -->
     </section>
+
+
 
 
 
@@ -143,17 +313,13 @@
 
                     <div class="row mt-5">
                         <div class="col-md-4">
-                            <h5>Start a conversation</h5>
-                            <ul class="list-unstyled p-0">
-                                <li class="#"><a href="mailto:hi@sharebootstrap.com" target="_blank" data-bypass="">(+91) 85114 50603</a>
-<li class="#"><a href="mailto:hi@sharebootstrap.com" target="_blank" data-bypass="">(+91) 99366 58654</a>
-<li class="#"><a href="mailto:hi@sharebootstrap.com" target="_blank" data-bypass="">info.designkart@gmail.com</a>
-
-
-
-
-                            </ul>
-                        </div>
+        <h4>Start a conversation</h4>
+        <ul class="list-unstyled p-0">
+            <li class="contact">(+91) 85114 50603</li>
+            <li class="contact">(+91) 99366 58654</li>
+            <li class="contact">info.designkart@gmail.com</li>
+        </ul>
+</div>
                         <div class="col-md-4">
                             <h4>Portfolio sites</h4>
                             <ul class="list-unstyled p-0">
@@ -209,7 +375,7 @@
  <!--Animated text on top ......JavaScript code-->
 <script>
   const animationContainer = document.querySelector('.wrap-animation');
-  const words = ['<span style="color: red;">Namaste!</span>', '<span style="color: red;">Hello!</span>', '<span style="color: red;">Hola!</span>', '<span style="color: red;">Bonjour!</span>', '<span style="color: red;">Hallo!</span>', '<span style="color: red;">Ciao!</span>'];
+  const words = ['<span style="color: red;">Graphics</span>', '<span style="color: red;">UI/UX</span>', '<span style="color: red;">Arts</span>', '<span style="color: red;">All</span>'];
   let currentIndex = 0;
 
   function animateText() {

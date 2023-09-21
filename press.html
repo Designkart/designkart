@@ -21,6 +21,12 @@
     <!-- Favicon -->
 <link rel="icon" href="img/favicon.png" type="image/png">
 
+<style>
+    header {
+        margin-bottom: -100px; /* Adjust this value as needed */
+    }
+</style>
+
  </head>
 
 <body>
@@ -68,68 +74,90 @@
  <!-- End Navigation -->
 
 
-    <header class="space-md">
+<header class="space-md">
         <div class="container">
             <div class="row d-flex align-content-center">
                 <div class="col-md-6">
                     <div class="headline mt-0 mb-0">
                         <div class="headline-content">
-                            <h1 class="headline-title display-3">A digital agency for 
-                                    brands.</h1>
-                            <p class="headline-subtitle">We collaborate with ambitious people.Let’s build something great.</p>
+
+<h1 class="headline-title display-3">
+    <span class="wrap-animation">
+    </span>
+</h1>
+                            <h1 class="headline-title display-3">Stories behind our design projects.</h1>
+                            <p class="headline-subtitle">If you have any media inquiries or partnership opportunities, please don't hesitate to reach out to us.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p class="lead mt-3"> In an industry where so many brands look and sound quite similar, offering something bold and distinctive ensures; internal audiences have a proud symbol to rally behind, empowering staff to be confident and singular</p>
-                    <p class="lead">in purpose; while external audiences (partners in particular) take notice, with a far higher likelihood of remembering the organisation and what they stand for. </p>
+                    <p class="lead mt-3"> Here, we are thrilled to showcase the media coverage and digital features that have celebrated some of our most inspiring and innovative design projects. Our commitment to excellence in design has not only won the hearts of our clients but has also garnered the attention of renowned publications and digital platforms.</p>
+
+                    <p class="lead">Stay up-to-date with our latest projects, announcements, and design insights by following us on our social media channels and subscribing to our newsletter. We invite you to join us on this exciting design journey.</p>
                 </div>
+
+<div class="image-popup-container" id="imagePopup">
+    <span class="close-button" onclick="closeImage()">×</span>
+    <img src="" alt="Popup Image" id="popupImage">
+    
+    <!-- Previous and Next buttons -->
+    <button class="prev-button" onclick="prevImage()">&#8249; Previous</button>
+    <button class="next-button" onclick="nextImage()">Next &#8250;</button>
+</div>
+
+
             </div>
         </div>
     </header>
     <section class="space-md">
-        <div class="container">
-            <figure> <img src="img/photo-1516638022313-53fa45a84c7f.jpg" alt="" class="img-fluid"> </figure>
-            <div class="row d-flex justify-content-start space-md">
-                <div class="col-md-2">
-                    <ul class="list-unstyled project-intro">
-                        <li class="title">What We Did</li>
-                        <li>Branding</li>
-                        <li>Website Design</li>
-                        <li>Website Development</li>
-                        <li>illustration</li>
-                    </ul>
-                </div>
-                <div class="col-md-7 offset-md-1">
-                    <p class="h4"> In an industry where so many brands look and sound quite similar, offering something bold and distinctive ensures; internal audiences have a proud symbol to rally behind, empowering staff to be confident and singular</p>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-12">
-                    <figure> <img src="img/photo-1500281781950-6cd80847ebcd.jpg" alt="" class="img-fluid"> </figure>
-                </div>
-            </div>
-            <div class="row space-md">
-                <div class="col-md-8">
-                    <h3>Gets pretty deep but they also know how to have a good time, so we imagined a refreshing and fun visual representation of their decentralized world.</h3> </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <figure> <img src="img/photo-1484755560615-a4c64e778a6c.jpg" alt="" class="img-fluid"> </figure>
-                </div>
-                <div class="col-md-6">
-                    <figure> <img src="img/photo-1558180702-95f1c3ae2ca3.jpg" alt="" class="img-fluid"> </figure>
-                </div>
-            </div>
-        </div>
-    </section>
+        
+
+<div class="gallery">
+<img src="img/projects/1.7.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/1.8.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.13.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.14.png" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.15.png" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.16.png" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.17.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.18.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.19.png" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.20.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.22.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.23.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.24.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.25.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.26.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.27.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.28.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.29.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.30.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.31.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.32.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.33.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.34.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.35.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.36.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.37.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.38.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.39.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.40.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.41.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.42.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.43.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.44.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.45.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="img/projects/2.46.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+
+</div>
+
+   </section>
 
 
 
 <!-- footer -->
 
-    <footer class="footer pb-5">
+<footer class="footer pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -143,17 +171,13 @@
 
                     <div class="row mt-5">
                         <div class="col-md-4">
-                            <h5>Start a conversation</h5>
-                            <ul class="list-unstyled p-0">
-                                <li class="#"><a href="mailto:hi@sharebootstrap.com" target="_blank" data-bypass="">(+91) 85114 50603</a>
-<li class="#"><a href="mailto:hi@sharebootstrap.com" target="_blank" data-bypass="">(+91) 99366 58654</a>
-<li class="#"><a href="mailto:hi@sharebootstrap.com" target="_blank" data-bypass="">info.designkart@gmail.com</a>
-
-
-
-
-                            </ul>
-                        </div>
+        <h4>Start a conversation</h4>
+        <ul class="list-unstyled p-0">
+            <li class="contact">(+91) 85114 50603</li>
+            <li class="contact">(+91) 99366 58654</li>
+            <li class="contact">info.designkart@gmail.com</li>
+        </ul>
+</div>
                         <div class="col-md-4">
                             <h4>Portfolio sites</h4>
                             <ul class="list-unstyled p-0">
@@ -209,7 +233,7 @@
  <!--Animated text on top ......JavaScript code-->
 <script>
   const animationContainer = document.querySelector('.wrap-animation');
-  const words = ['<span style="color: red;">Namaste!</span>', '<span style="color: red;">Hello!</span>', '<span style="color: red;">Hola!</span>', '<span style="color: red;">Bonjour!</span>', '<span style="color: red;">Hallo!</span>', '<span style="color: red;">Ciao!</span>'];
+  const words = ['<span style="color: red;">Press</span>', '<span style="color: red;">Media Coverage</span>', '<span style="color: red;">Headline</span>', '<span style="color: red;">Interview</span>'];
   let currentIndex = 0;
 
   function animateText() {
@@ -224,6 +248,14 @@
 
   startAnimation();
 </script>
+
+
+  <!-- Image containter where image will show in big size -->
+      <div class="image-popup-container" id="imagePopup">
+        <span class="close-button" onclick="closeImage()">×</span>
+        <img src="" alt="Popup Image" id="popupImage">
+      </div>
+    <script src="script.js"></script>
 
 </body>
 
