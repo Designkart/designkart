@@ -240,7 +240,7 @@ Header intro
 /* portfolio filter */
 #filters li {
     display: inline-block;
-    margin-right: 100px;
+    margin-right: 75px;
 }
 
 #filters li:last-child {
