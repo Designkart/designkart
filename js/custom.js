@@ -12,6 +12,9 @@ $(document).ready(function() {
     // load functions
     imageBG();
     grid();
+   // ADD GLOBAL RIGHT-CLICK DISABLE CODE HERE
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    // ----------------------------------------
 
 });
 
